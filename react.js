@@ -1,4 +1,5 @@
 module.exports = {
+    "extends": "eslint-config-nsda",
     "plugins": [
         "react",
         "jsx-a11y",
