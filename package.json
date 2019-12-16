@@ -28,6 +28,6 @@
   },
   "dependencies": {
     "eslint-config-airbnb": ">= 16",
-    "eslint-config-airbnb-base": ">= 16"
+    "eslint-config-airbnb-base": ">= 14"
   }
 }
