@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/NationalSpeechandDebateAssociation/eslint-config-nsda/issues"
   },
-  "homepage": "https://github.com/NationalSpeechandDebateAssociation/eslint-config-nsda#readme"
+  "homepage": "https://github.com/NationalSpeechandDebateAssociation/eslint-config-nsda#readme",
+  "peerDependencies": {
+    "eslint": ">= 6",
+    "eslint-plugin-import": ">= 2.8",
+    "eslint-plugin-jsx-a11y": ">= 6.2",
+    "eslint-plugin-react": ">= 7.16"
+  },
+  "dependencies": { "eslint-config-airbnb": ">= 16" }
 }
