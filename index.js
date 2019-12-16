@@ -1,5 +1,5 @@
 module.exports = {
-    "extends": "eslint-config-airbnb-base",
+    "extends": "airbnb-base",
     "plugins": [
         "import",
     ],
