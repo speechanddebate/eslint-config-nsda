@@ -1,20 +1,11 @@
 module.exports = {
     "extends": "airbnb",
     "plugins": [
-        "react",
-        "jsx-a11y",
         "import",
     ],
     "env": {
-        "browser": true,
         "node": true,
         "mocha": true,
-    },
-    "parserOptions": {
-        "ecmaVersion": 2018,
-        "ecmaFeatures": {
-            "jsx": true
-        }
     },
     "rules": {
         "indent": [2, 4, {"SwitchCase": 1, "MemberExpression": "off", "flatTernaryExpressions": true, "ignoredNodes": ["ConditionalExpression"]}],
@@ -23,18 +14,9 @@ module.exports = {
         "no-unused-vars": [2, {"argsIgnorePattern": "err|rows|req|res|next"}],
         "no-plusplus": [2, {"allowForLoopAfterthoughts": true}],
         "no-lonely-if": 0,
-        "import/no-named-as-default": 0,
         "object-curly-newline": 0,
         "no-return-assign": [2, "except-parens"],
         "prefer-destructuring": 0,
-        "react/jsx-indent": [2, 4],
-        "react/jsx-indent-props": [2, 4],
-        "react/jsx-filename-extension": 0,
-        "react/jsx-curly-brace-presence": 0,
-        "react/no-did-mount-set-state": 0,
-        "react/no-unused-prop-types": 0,
-        "react/forbid-prop-types": 0,
-        "react/prefer-stateless-function": [1, {"ignorePureComponents": true}],
         "no-console": 0,
         "func-names": 0,
         "function-paren-newline": 0,
@@ -52,32 +34,12 @@ module.exports = {
             "exports": "always-multiline",
             "functions": "ignore",
         }],
+        "no-else-return": 1,
+        "operator-linebreak": 0,
+        "import/no-named-as-default": 0,
         "import/no-mutable-exports": 0,
         "import/no-extraneous-dependencies": 0,
-        "jsx-a11y/no-static-element-interactions": 0,
-        "jsx-a11y/no-noninteractive-element-interactions": 0,
-        "jsx-a11y/anchor-is-valid": 0,
-        "jsx-a11y/click-events-have-key-events": 0,
-        "jsx-a11y/no-autofocus": 0,
-        "jsx-a11y/label-has-for": [2, {"required": {"every": ["id"]}}],
-        "react/button-has-type": 1,
-        "no-else-return": 1,
-        "react/jsx-tag-spacing": 1,
         "import/no-useless-path-segments": 1,
-        "react/jsx-curly-newline": [1, { multiline: "require", singleline: "consistent", }],
-        "react/jsx-wrap-multilines": 1,
-
-        // New rules that are to be kept off
         "import/no-named-as-default-member": 0,
-        "react/destructuring-assignment": 0,
-        "jsx-a11y/label-has-associated-control": 0,
-        "jsx-a11y/control-has-associated-label": 0,
-        "react/jsx-props-no-spreading": 0,
-        "operator-linebreak": 0,
-        "react/jsx-one-expression-per-line": 0,
-
-        // New rules to be kept off for an indertiminate amount of time 
-        "react/no-deprecated": 0,
-        "react/no-access-state-in-setstate": 0,
     }
 };
