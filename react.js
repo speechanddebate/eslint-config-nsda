@@ -21,6 +21,7 @@ module.exports = {
         "react/jsx-indent-props": [2, 4],
         "react/jsx-filename-extension": 0,
         "react/jsx-curly-brace-presence": 0,
+        "react/jsx-wrap-multilines": 0,
         "react/no-did-mount-set-state": 0,
         "react/no-unused-prop-types": 0,
         "react/forbid-prop-types": 0,
