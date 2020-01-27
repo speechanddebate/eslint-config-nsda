@@ -29,7 +29,15 @@ module.exports = {
         "react/button-has-type": 1,
         "react/jsx-tag-spacing": 1,
         "react/jsx-curly-newline": [1, { multiline: "require", singleline: "consistent", }],
-        "react/jsx-wrap-multilines": 1,
+        "react/jsx-wrap-multilines": [1, {
+            "declaration": "parens",
+            "assignment": "parens",
+            "return": "parens",
+            "arrow": "parens",
+            "condition": "ignore",
+            "logical": "ignore",
+            "prop": "ignore"
+        }],
         "jsx-a11y/no-static-element-interactions": 0,
         "jsx-a11y/no-noninteractive-element-interactions": 0,
         "jsx-a11y/anchor-is-valid": 0,
