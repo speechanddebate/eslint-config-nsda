@@ -25,10 +25,18 @@ module.exports = {
         "react/no-did-mount-set-state": 0,
         "react/no-unused-prop-types": 0,
         "react/forbid-prop-types": 0,
-        "react/prefer-stateless-function": [1, {"ignorePureComponents": true}],
+        "react/prefer-stateless-function": [1, {
+            "ignorePureComponents": true
+        }],
+        "react/require-default-props": [2, {
+            "ignoreFunctionalComponents": true
+        }],
         "react/button-has-type": 1,
         "react/jsx-tag-spacing": 1,
-        "react/jsx-curly-newline": [1, { multiline: "require", singleline: "consistent", }],
+        "react/jsx-curly-newline": [1, {
+            "multiline": "require",
+            "singleline": "consistent"
+        }],
         "react/jsx-wrap-multilines": [1, {
             "declaration": "parens",
             "assignment": "parens",
