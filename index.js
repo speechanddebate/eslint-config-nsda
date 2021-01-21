@@ -42,5 +42,6 @@ module.exports = {
         "import/no-extraneous-dependencies": 0,
         "import/no-useless-path-segments": 1,
         "import/no-named-as-default-member": 0,
+        "import/extensions": 0,
     }
 };
