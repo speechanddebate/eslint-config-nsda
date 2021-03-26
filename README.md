@@ -13,7 +13,7 @@ npm install eslint eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a1
 
 Then install the package:
 ```
-npm install NationalSpeechandDebateAssociation/eslint-config-nsda --save-dev
+npm install speechanddebate/eslint-config-nsda --save-dev
 ```
 
 Then extend the relevant packages in your package.json:
