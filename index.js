@@ -10,6 +10,7 @@ module.exports = {
     "rules": {
         "indent": [2, 4, {"SwitchCase": 1, "MemberExpression": "off", "flatTernaryExpressions": true, "ignoredNodes": ["ConditionalExpression"]}],
         "quotes": [2, "single", {"avoidEscape": true, "allowTemplateLiterals": true}],
+        "camelcase": [2, { "properties": "never", "allow": ["UNSAFE_componentWillMount", "UNSAFE_componentWillReceiveProps"] }],
         "no-shadow": [2, {"builtinGlobals": false, "hoist": "functions", "allow": ["err", "error", "req", "res", "request", "response", "rows", "done", "next", "callback", "props"]}],
         "no-unused-vars": [2, {"argsIgnorePattern": "err|rows|req|res|next"}],
         "no-plusplus": [2, {"allowForLoopAfterthoughts": true}],

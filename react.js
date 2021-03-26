@@ -24,6 +24,7 @@ module.exports = {
         "react/jsx-wrap-multilines": 0,
         "react/no-did-mount-set-state": 0,
         "react/no-unused-prop-types": 0,
+        "react/prop-types": [2, { "skipUndeclared": true }],
         "react/forbid-prop-types": 0,
         "react/prefer-stateless-function": [1, {
             "ignorePureComponents": true
@@ -46,6 +47,7 @@ module.exports = {
             "logical": "ignore",
             "prop": "ignore"
         }],
+        "react/jsx-no-target-blank": [2, { "allowReferrer": true }],
         "jsx-a11y/no-static-element-interactions": 0,
         "jsx-a11y/no-noninteractive-element-interactions": 0,
         "jsx-a11y/anchor-is-valid": 0,
