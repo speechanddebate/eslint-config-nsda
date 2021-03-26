@@ -1,5 +1,5 @@
 module.exports = {
-    "extends": ["airbnb", "@speechanddebate/eslint-config-nsda"],
+    "extends": ["airbnb", "./index.js"],
     "plugins": [
         "import",
         "react",
