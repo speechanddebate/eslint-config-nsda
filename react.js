@@ -22,6 +22,7 @@ module.exports = {
         "react/jsx-filename-extension": 0,
         "react/jsx-curly-brace-presence": 0,
         "react/jsx-wrap-multilines": 0,
+        "react/sort-comp": 0,
         "react/no-did-mount-set-state": 0,
         "react/no-unused-prop-types": 0,
         "react/prop-types": [2, { "skipUndeclared": true }],
