@@ -1,6 +1,6 @@
 {
   "name": "@speechanddebate/eslint-config-nsda",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "NSDA ESLint config",
   "main": "index.js",
   "scripts": {
@@ -8,18 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NationalSpeechandDebateAssociation/eslint-config-nsda.git"
+    "url": "git+https://github.com/speechanddebate/eslint-config-nsda.git"
   },
   "keywords": [
     "eslint",
     "eslintconfig"
   ],
-  "author": "Aaron Hardy",
+  "author": "Aaron Hardy <aaron.hardy@speechanddebate.org> (https://speechanddebate.org)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NationalSpeechandDebateAssociation/eslint-config-nsda/issues"
+    "url": "https://github.com/speechanddebate/eslint-config-nsda/issues"
   },
-  "homepage": "https://github.com/NationalSpeechandDebateAssociation/eslint-config-nsda#readme",
+  "homepage": "https://github.com/speechanddebate/eslint-config-nsda#readme",
   "peerDependencies": {
     "eslint": ">= 7",
     "eslint-plugin-import": ">= 2.22",
