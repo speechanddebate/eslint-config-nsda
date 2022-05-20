@@ -45,6 +45,8 @@ module.exports = {
         "no-else-return": 1,
         "operator-linebreak": 0,
         "class-methods-use-this": 0,
+        "prefer-regex-literals": 0,
+        "default-param-last": 0,
         "import/no-named-as-default": 0,
         "import/no-mutable-exports": 0,
         "import/no-extraneous-dependencies": 0,

@@ -11,7 +11,7 @@ module.exports = {
         "mocha": true,
     },
     "parserOptions": {
-        "ecmaVersion": 2018,
+        "ecmaVersion": 2022,
         "ecmaFeatures": {
             "jsx": true
         }
@@ -55,6 +55,8 @@ module.exports = {
         "jsx-a11y/click-events-have-key-events": 0,
         "jsx-a11y/no-autofocus": 0,
         "jsx-a11y/label-has-for": [2, {"required": {"every": ["id"]}}],
+        "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
+        "react/no-unstable-nested-components": [2, { "allowAsProps": true }],
 
         // New rules that are to be kept off
         "react/destructuring-assignment": 0,
