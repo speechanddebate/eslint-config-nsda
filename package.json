@@ -1,6 +1,6 @@
 {
   "name": "@speechanddebate/eslint-config-nsda",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "NSDA ESLint config",
   "main": "index.js",
   "scripts": {
@@ -21,14 +21,14 @@
   },
   "homepage": "https://github.com/speechanddebate/eslint-config-nsda#readme",
   "peerDependencies": {
-    "eslint": ">= 8",
-    "eslint-plugin-import": ">= 2.22",
-    "eslint-plugin-jsx-a11y": ">= 6.4",
-    "eslint-plugin-react": ">= 7.19"
+    "eslint": "^8.15.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.30.0"
   },
   "dependencies": {
-    "eslint-config-airbnb": ">= 16",
-    "eslint-config-airbnb-base": ">= 14",
-    "eslint-plugin-react": "^7.19.0"
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-react": "^7.30.0"
   }
 }
