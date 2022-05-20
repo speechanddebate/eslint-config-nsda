@@ -1,6 +1,6 @@
 {
   "name": "@speechanddebate/eslint-config-nsda",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "NSDA ESLint config",
   "main": "index.js",
   "scripts": {
