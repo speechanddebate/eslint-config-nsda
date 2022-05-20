@@ -35,6 +35,13 @@ module.exports = {
             "exports": "always-multiline",
             "functions": "ignore",
         }],
+        'max-len': ['error', 100, 2, {
+            ignoreUrls: true,
+            ignoreComments: false,
+            ignoreRegExpLiterals: true,
+            ignoreStrings: true,
+            ignoreTemplateLiterals: true,
+        }],
         "no-else-return": 1,
         "operator-linebreak": 0,
         "class-methods-use-this": 0,
