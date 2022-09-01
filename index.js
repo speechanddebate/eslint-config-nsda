@@ -6,6 +6,7 @@ module.exports = {
     "env": {
         "node": true,
         "mocha": true,
+        "jest": true,
     },
     "rules": {
         "indent": [2, 4, {"SwitchCase": 1, "MemberExpression": "off", "flatTernaryExpressions": true, "ignoredNodes": ["ConditionalExpression"]}],
