@@ -1,5 +1,5 @@
 module.exports = {
-    "extends": ["airbnb", "./index.js", "./react.js"],
+    "extends": ["airbnb", "./index.js", "./react.js", "./jest.js"],
     "rules": {
         "no-tabs": 0,
         "key-spacing": 0,
