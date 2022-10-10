@@ -2,6 +2,7 @@ module.exports = {
     "extends": ["airbnb", "./index.js", "./react.js", "./jest.js"],
     "rules": {
         "no-tabs": 0,
+		"no-use-before-define": 0,
         "key-spacing": 0,
         "comma-spacing": 0,
         "implicit-arrow-linebreak": 0,
