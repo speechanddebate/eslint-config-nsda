@@ -35,6 +35,7 @@ module.exports = {
         ],
         "react/jsx-indent-props": 0,
         "react/jsx-equals-spacing": 0,
+		"react/no-unknown-property": 0,
         "jsx-a11y/anchor-has-content": 0
     }
 };
