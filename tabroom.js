@@ -11,6 +11,7 @@ module.exports = {
         "import/no-dynamic-require": 0,
         "global-require": 0,
         "padded-blocks": 0,
+		"no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"],
         "no-plusplus": 0,
         "indent": [
           "error",
