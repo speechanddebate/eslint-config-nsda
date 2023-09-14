@@ -4,6 +4,7 @@ module.exports = {
         "import",
         "react",
         "jsx-a11y",
+        "testing-library",
     ],
     "env": {
         "browser": true,
