@@ -1,5 +1,5 @@
 module.exports = {
-    "extends": ["airbnb", "./index.js"],
+    "extends": ["airbnb", "plugin:testing-library/react", "./index.js"],
     "plugins": [
         "import",
         "react",
