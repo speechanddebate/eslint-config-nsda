@@ -1,14 +1,15 @@
 module.exports = {
-    "extends": ["airbnb", "plugin:testing-library/svelte", "./index.js"],
+	"extends": [
+		'plugin:svelte/base',
+	],
     "plugins": [
         "import",
-        "svelte",
-        "testing-library",
+		"svelte"
     ],
     "env": {
         "browser": true,
         "node": true,
-        "vite": true
+		"jest": true
     },
     "parserOptions": {
         "ecmaVersion": 2022,
