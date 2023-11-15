@@ -1,5 +1,5 @@
 module.exports = {
-    "extends": ["airbnb", "./index.js", "./jest.js"],
+    "extends": ["airbnb", "./index.js", "./jest.js", "./svelte.js"],
     "rules": {
         "no-tabs": 0,
 		"no-use-before-define": 0,
