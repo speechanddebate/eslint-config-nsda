@@ -1,6 +1,6 @@
 {
   "name": "@speechanddebate/eslint-config-nsda",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "NSDA ESLint config",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,8 @@
     "eslint": "^8.15.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.30.0"
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-svelte": "^2.35.0"
   },
   "dependencies": {
     "eslint-config-airbnb": "^19.0.4",
