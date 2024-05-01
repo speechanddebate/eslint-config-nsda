@@ -1,11 +1,7 @@
 export default {
-    "plugins": [
-        "jest",
-    ],
-    "files": ['**/*.test.js'],
-    "extends": ["airbnb", "plugin:jest/recommended", "./index.js", "./react.js"],
-    "rules": {
-        "jest/prefer-expect-assertions": "off",
-        "jest/expect-expect": "off"
-    }
+    files: ['**/*.test.js', '**/*.test.ts'],
+    rules: {
+        'jest/expect-expect': 0,
+        'jest/prefer-expect-assertions': 0,
+    },
 };
