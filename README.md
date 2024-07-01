@@ -1,31 +1,50 @@
-# eslint-config-nsda
-This package exports the base NSDA eslint config, and a second optional config for React/JSX. The exports respectively extend airbnb-base and airbnb. They require eslint and eslint-plugin-import, along with eslint-plugin-react, eslint-plugin-jsx-a11y, and eslint-plugin-testing-library for the React config.
+# NSDA ESLint Config
 
-First install eslint and any plugins:
+This package exports multiple NSDA eslint configs comaptible with eslint's flat config format.
+
+It does not support eslint v9 yet, as too many plugins are not yet compatible.
+
+The default export is a base config for use with general JS projects. Or, access different configs with the named export:
+
+`{ configs }` - Full eslint configs with plugins/rules/etc...
+
+- configs.recommended - Same as the default export
+- configs.react - Base config + React plugins/rules
+- configs.typeChecked - For Typescript projects, also includes React config.
+- configs.tabroom - For use with Tabroom, based on the typeChecked config.
+
+You can also use individual named exports to compose a custom config:
+
+`{ plugins }` - Individual plugin setups - note that some plugins using the flatCompat utility export arrays instead of objects
+
+`{ rules }` - Individual rule sets
+
+`{ ignores }` - Ignore/exclusion rules
+
+`{ globals }` - Global variable setup
+
+To install:
 
 ```
-npm install eslint eslint-plugin-import --save-dev
+npm install eslint@8.57.0 @speechanddebate/eslint-config-nsda --save-dev
 ```
+
+Then use one of the exported configs in your `eslint.config.js`:
+
+```js
+import nsda from '@speechanddebate/eslint-config-nsda';
+export default [
+	...nsda,
+	{ rules: {} }, // Custom overrides
+];
+```
+
 or
-```
-npm install eslint eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y eslint-plugin-testing-library --save-dev
-```
 
-Then install the package:
-```
-npm install speechanddebate/eslint-config-nsda --save-dev
-```
-
-Then extend the relevant packages in your package.json:
-```
- "eslintConfig": {
-    "extends": [
-      "eslint-config-nsda",
-      "eslint-config-nsda/react"
-    ],
-    "ignorePatterns": [
-      "build/*",
-      "coverage/*",
-    ]
-  },
+```js
+import { configs } from '@speechanddebate/eslint-config-nsda';
+export default [
+	...configs.typeChecked,
+	{ rules: {} }, // Custom overrides
+];
 ```
