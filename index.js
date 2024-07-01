@@ -43,11 +43,24 @@ export const rules = {
 export { ignores };
 export { globals };
 
+const base = [ignores, ...airbnb, globals, eslint.configs.recommended];
+
 const recommended = [
-	ignores,
-	...airbnb,
-	globals,
-	eslint.configs.recommended,
+	...base,
+
+	vitestPlugin,
+	importPlugin,
+
+	baseRules,
+	importRules,
+	jestRules,
+	vitestRules,
+
+	eslintConfigPrettier,
+];
+
+const react = [
+	...base,
 
 	vitestPlugin,
 	...testingLibraryPlugin,
@@ -64,10 +77,7 @@ const recommended = [
 ];
 
 const typeChecked = tseslint.config(
-	ignores,
-	...airbnb,
-	globals,
-	eslint.configs.recommended,
+	...base,
 
 	...tseslint.configs.strictTypeChecked,
 	...tseslint.configs.stylisticTypeChecked,
@@ -94,6 +104,7 @@ const tabroom = [...typeChecked, { ...tabroomRules }];
 
 export const configs = {
 	recommended,
+	react,
 	typeChecked,
 	tabroom,
 };

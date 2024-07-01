@@ -5,5 +5,6 @@ export default {
 		'**/build/**',
 		'**/coverage/**',
 		'**/public/**',
+		'**/vendor/**',
 	],
 };
