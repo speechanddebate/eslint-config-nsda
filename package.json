@@ -1,41 +1,47 @@
 {
-  "name": "@speechanddebate/eslint-config-nsda",
-  "version": "2.0.0",
-  "description": "NSDA ESLint config",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "format": "prettier . --write",
-    "format-check": "prettier . --check"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/speechanddebate/eslint-config-nsda.git"
-  },
-  "keywords": [
-    "eslint",
-    "eslintconfig"
-  ],
-  "author": "Aaron Hardy <aaron.hardy@speechanddebate.org> (https://speechanddebate.org)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/speechanddebate/eslint-config-nsda/issues"
-  },
-  "homepage": "https://github.com/speechanddebate/eslint-config-nsda#readme",
-  "peerDependencies": {
-    "eslint": "^8.5.3",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.30.0"
-  },
-  "dependencies": {
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-jest": "26.5.3",
-    "eslint-plugin-react": "^7.30.0",
-    "eslint-plugin-testing-library": "^6.0.1"
-  },
-  "devDependencies": {
-    "prettier": "^3.2.5"
-  }
+	"name": "@speechanddebate/eslint-config-nsda",
+	"version": "2.0.0",
+	"description": "NSDA ESLint config",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"format": "prettier . --write",
+		"format-check": "prettier . --check"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/speechanddebate/eslint-config-nsda.git"
+	},
+	"keywords": [
+		"eslint",
+		"eslintconfig"
+	],
+	"author": "Aaron Hardy <aaron.hardy@speechanddebate.org> (https://speechanddebate.org)",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/speechanddebate/eslint-config-nsda/issues"
+	},
+	"homepage": "https://github.com/speechanddebate/eslint-config-nsda#readme",
+	"peerDependencies": {
+		"eslint": "^8.5.3"
+	},
+	"dependencies": {
+		"eslint-config-airbnb": "^19.0.4",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-import-resolver-typescript": "^3.6.1",
+		"eslint-plugin-import": "^2.29.1",
+		"eslint-plugin-jest": "^28.6.0",
+		"eslint-plugin-jsx-a11y": "^6.8.0",
+		"eslint-plugin-react": "^7.34.0",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-react-refresh": "^0.4.5",
+		"eslint-plugin-testing-library": "^6.2.0",
+		"eslint-plugin-vitest": "^0.3.22",
+		"globals": "^15.6.0",
+		"typescript-eslint": "^7.13.1"
+	},
+	"devDependencies": {
+		"prettier": "^3.2.5"
+	}
 }
