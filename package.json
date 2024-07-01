@@ -23,7 +23,7 @@
 	},
 	"homepage": "https://github.com/speechanddebate/eslint-config-nsda#readme",
 	"peerDependencies": {
-		"eslint": "8.5.3"
+		"eslint": "^8.5.3"
 	},
 	"dependencies": {
 		"eslint-config-airbnb": "^19.0.4",
