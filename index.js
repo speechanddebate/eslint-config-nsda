@@ -4,7 +4,7 @@ import eslintConfigPrettier from 'eslint-config-prettier';
 
 import ignores from './configs/ignores.js';
 import globals from './configs/globals.js';
-import airbnb from './configs/airbnb.js';
+import { airbnbBase, airbnbWithReact } from './configs/airbnb.js';
 import typescript from './configs/typescript.js';
 import disableTypeChecked from './configs/disableTypeChecked.js';
 
@@ -43,10 +43,11 @@ export const rules = {
 export { ignores };
 export { globals };
 
-const base = [ignores, ...airbnb, globals, eslint.configs.recommended];
+const base = [ignores, globals, eslint.configs.recommended];
 
 const recommended = [
 	...base,
+	...airbnbBase,
 
 	vitestPlugin,
 	importPlugin,
@@ -61,6 +62,7 @@ const recommended = [
 
 const react = [
 	...base,
+	...airbnbWithReact,
 
 	vitestPlugin,
 	...testingLibraryPlugin,

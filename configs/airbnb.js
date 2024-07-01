@@ -10,7 +10,16 @@ const compat = new FlatCompat({
 	resolvePluginsRelativeTo: __dirname,
 });
 
-export default compat.config({
+export const airbnbBase = compat.config({
+	extends: ['airbnb-base'],
+	overrides: [
+		{
+			files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
+		},
+	],
+});
+
+export const airbnbWithReact = compat.config({
 	extends: ['airbnb', 'airbnb/hooks'],
 	overrides: [
 		{
@@ -18,3 +27,5 @@ export default compat.config({
 		},
 	],
 });
+
+export default null;
