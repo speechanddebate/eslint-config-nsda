@@ -4,8 +4,9 @@ export default {
 			2,
 			'ignorePackages',
 			{
-				js: 'never',
-				mjs: 'never',
+				js: 'always',
+				mjs: 'always',
+				cjs: 'always',
 				jsx: 'never',
 				ts: 'never',
 				tsx: 'never',
