@@ -53,7 +53,7 @@ export default {
 		// 'no-console': 0,
 		// 'no-else-return': 1,
 		// 'no-lonely-if': 0,
-		// 'no-param-reassign': 0,
+		'no-param-reassign': [2, { props: false }],
 		'no-plusplus': [2, { allowForLoopAfterthoughts: true }],
 		// 'no-return-assign': [2, 'except-parens'],
 		'no-shadow': [
