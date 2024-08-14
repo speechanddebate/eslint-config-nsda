@@ -82,6 +82,7 @@ const react = [
 
 const typeChecked = tseslint.config(
 	...base,
+	...airbnbWithReact,
 
 	...tseslint.configs.strictTypeChecked,
 	...tseslint.configs.stylisticTypeChecked,
