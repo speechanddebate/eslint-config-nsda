@@ -82,6 +82,29 @@ const react = [
 
 const typeChecked = tseslint.config(
 	...base,
+	...airbnbBase,
+
+	...tseslint.configs.strictTypeChecked,
+	...tseslint.configs.stylisticTypeChecked,
+	typescript,
+	disableTypeChecked,
+
+	vitestPlugin,
+	...testingLibraryPlugin,
+	importPlugin,
+	...importTypescriptPlugin,
+
+	baseRules,
+	importRules,
+	jestRules,
+	vitestRules,
+	typescriptRules,
+
+	eslintConfigPrettier,
+);
+
+const typeCheckedWithReact = tseslint.config(
+	...base,
 	...airbnbWithReact,
 
 	...tseslint.configs.strictTypeChecked,
@@ -116,6 +139,7 @@ export const configs = {
 	recommended,
 	react,
 	typeChecked,
+	typeCheckedWithReact,
 	tabroom,
 };
 
