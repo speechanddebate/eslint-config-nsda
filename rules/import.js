@@ -17,5 +17,6 @@ export default {
 		'import/no-named-as-default': 0,
 		'import/no-named-as-default-member': 0,
 		'import/no-useless-path-segments': 1,
+		'import/prefer-default-export': 0,
 	},
 };
