@@ -2,6 +2,7 @@ import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import eslintPluginSvelte from 'eslint-plugin-svelte';
+import eslintPluginQuery from '@tanstack/eslint-plugin-query';
 
 import ignores from './configs/ignores.js';
 import globals from './configs/globals.js';
@@ -29,6 +30,7 @@ export const plugins = {
 	import: importPlugin,
 	importTypescript: importTypescriptPlugin,
 	svelte: eslintPluginSvelte,
+	query: eslintPluginQuery,
 };
 
 export const rules = {
@@ -69,6 +71,7 @@ const react = [
 	vitestPlugin,
 	...testingLibraryPlugin,
 	importPlugin,
+	...eslintPluginQuery.configs['flat/recommended'],
 
 	baseRules,
 	importRules,
@@ -116,6 +119,7 @@ const typeCheckedWithReact = tseslint.config(
 	...testingLibraryPlugin,
 	importPlugin,
 	...importTypescriptPlugin,
+	...eslintPluginQuery.configs['flat/recommended'],
 
 	baseRules,
 	importRules,

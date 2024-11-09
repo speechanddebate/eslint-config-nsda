@@ -1,6 +1,6 @@
 {
 	"name": "@speechanddebate/eslint-config-nsda",
-	"version": "2.0.7",
+	"version": "2.0.8",
 	"description": "NSDA ESLint config",
 	"main": "index.js",
 	"type": "module",
@@ -26,6 +26,7 @@
 		"eslint": "^8.57.0"
 	},
 	"dependencies": {
+		"@tanstack/eslint-plugin-query": "^5.60.1",
 		"eslint-config-airbnb": "^19.0.4",
 		"eslint-config-airbnb-base": "^15.0.0",
 		"eslint-config-prettier": "^9.1.0",
