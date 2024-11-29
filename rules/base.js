@@ -77,7 +77,7 @@ export default {
 			},
 		],
 		// 'no-underscore-dangle': 0,
-		// 'no-unused-vars': [2, { argsIgnorePattern: 'err|rows|req|res|next' }],
+		'no-unused-vars': [2, { argsIgnorePattern: 'err|rows|req|res|next|_' }],
 		// 'object-curly-newline': 0,
 		// 'operator-linebreak': 0,
 		// 'prefer-destructuring': 0,
