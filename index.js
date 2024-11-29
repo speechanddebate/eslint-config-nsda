@@ -68,6 +68,22 @@ const react = [
 	...base,
 	...airbnbWithReact,
 
+	// Fix issues with old AirBNB config clobbering the correct languageOptions
+	{
+		files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx', '**/*.mjs'],
+	},
+	{
+		languageOptions: {
+			parserOptions: {
+				ecmaFeatures: {
+					jsx: true,
+				},
+			},
+			ecmaVersion: 'latest',
+			sourceType: 'module',
+		},
+	},
+
 	vitestPlugin,
 	...testingLibraryPlugin,
 	importPlugin,
@@ -109,6 +125,21 @@ const typeChecked = tseslint.config(
 const typeCheckedWithReact = tseslint.config(
 	...base,
 	...airbnbWithReact,
+	// Fix issues with old AirBNB config clobbering the correct languageOptions
+	{
+		files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx', '**/*.mjs'],
+	},
+	{
+		languageOptions: {
+			parserOptions: {
+				ecmaFeatures: {
+					jsx: true,
+				},
+			},
+			ecmaVersion: 'latest',
+			sourceType: 'module',
+		},
+	},
 
 	...tseslint.configs.strictTypeChecked,
 	...tseslint.configs.stylisticTypeChecked,
