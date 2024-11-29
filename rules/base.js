@@ -23,7 +23,7 @@ export default {
 		//         functions: 'ignore',
 		//     },
 		// ],
-		// 'consistent-return': 0,
+		'consistent-return': 0,
 		// 'default-param-last': 0,
 		// 'func-names': 0,
 		// 'function-paren-newline': 0,
