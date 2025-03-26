@@ -44,7 +44,7 @@ export default {
 		// 'react/jsx-indent-props': [2, 4],
 		// 'react/jsx-no-target-blank': [2, { allowReferrer: true }],
 		// 'react/jsx-one-expression-per-line': 0,
-		// 'react/jsx-props-no-spreading': 0,
+		'react/jsx-props-no-spreading': 0,
 		// 'react/jsx-tag-spacing': 1,
 		// 'react/jsx-wrap-multilines': [
 		//     1,
