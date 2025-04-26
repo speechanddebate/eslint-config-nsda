@@ -50,5 +50,13 @@ export default {
 		// Typescript specific rules
 		'@typescript-eslint/no-floating-promises': [1, { ignoreVoid: true }],
 		'no-void': [1, { allowAsStatement: true }],
+		'@typescript-eslint/consistent-type-imports': [
+			1,
+			{
+				prefer: 'type-imports',
+				disallowTypeAnnotations: true,
+				fixStyle: 'inline-type-imports',
+			},
+		],
 	},
 };
