@@ -58,9 +58,6 @@ export default {
 				fixStyle: 'inline-type-imports',
 			},
 		],
-		'@typescript-eslint/prefer-nullish-coalescing': [
-			1,
-			{ ignoreConditionalTests: true },
-		],
+		'@typescript-eslint/prefer-nullish-coalescing': [0],
 	},
 };
