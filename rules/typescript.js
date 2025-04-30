@@ -60,10 +60,7 @@ export default {
 		],
 		'@typescript-eslint/prefer-nullish-coalescing': [
 			1,
-			{
-				ignoreConditionalTests: true,
-				ignoreIfStatements: true,
-			},
+			{ ignoreConditionalTests: true },
 		],
 	},
 };

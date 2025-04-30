@@ -1,6 +1,6 @@
 {
 	"name": "@speechanddebate/eslint-config-nsda",
-	"version": "2.0.15",
+	"version": "2.0.16",
 	"description": "NSDA ESLint config",
 	"main": "index.js",
 	"type": "module",
@@ -42,9 +42,9 @@
 		"eslint-plugin-vitest": "^0.3.22",
 		"globals": "^15.6.0",
 		"svelte": "^4.2.18",
-		"typescript-eslint": "^7.13.1"
+		"typescript-eslint": "8.31.1"
 	},
 	"devDependencies": {
-		"prettier": "^3.2.5"
+		"prettier": "^3.5.3"
 	}
 }
