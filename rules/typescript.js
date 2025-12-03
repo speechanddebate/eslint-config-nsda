@@ -58,7 +58,14 @@ export default {
 				fixStyle: 'inline-type-imports',
 			},
 		],
-		'@typescript-eslint/prefer-nullish-coalescing': [0],
+		'@typescript-eslint/prefer-nullish-coalescing': [
+			0,
+			{
+				ignoreConditionalTests: true,
+				ignoreMixedLogicalExpressions: true,
+				ignoreIfStatements: true,
+			},
+		],
 		'@typescript-eslint/restrict-template-expressions': [
 			'error',
 			{
