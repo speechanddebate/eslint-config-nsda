@@ -55,6 +55,18 @@ export default {
 		// 'no-lonely-if': 0,
 		'no-param-reassign': [2, { props: false }],
 		'no-plusplus': [2, { allowForLoopAfterthoughts: true }],
+		'no-restricted-syntax': [
+			{
+				selector: 'LabeledStatement',
+				message:
+					'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
+			},
+			{
+				selector: 'WithStatement',
+				message:
+					'`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
+			},
+		],
 		// 'no-return-assign': [2, 'except-parens'],
 		'no-shadow': [
 			2,
