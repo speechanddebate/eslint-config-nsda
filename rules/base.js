@@ -56,6 +56,7 @@ export default {
 		'no-param-reassign': [2, { props: false }],
 		'no-plusplus': [2, { allowForLoopAfterthoughts: true }],
 		'no-restricted-syntax': [
+			2,
 			{
 				selector: 'LabeledStatement',
 				message:
