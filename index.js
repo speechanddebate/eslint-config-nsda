@@ -1,7 +1,6 @@
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import eslintConfigPrettier from 'eslint-config-prettier';
-import eslintPluginSvelte from 'eslint-plugin-svelte';
 import eslintPluginQuery from '@tanstack/eslint-plugin-query';
 
 import ignores from './configs/ignores.js';
@@ -29,7 +28,6 @@ export const plugins = {
 	testingLibrary: testingLibraryPlugin,
 	import: importPlugin,
 	importTypescript: importTypescriptPlugin,
-	svelte: eslintPluginSvelte,
 	query: eslintPluginQuery,
 };
 
